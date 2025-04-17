@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="/Resources/favicon.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="/Resources/favicon.jpg" />
     <title>Traphaco AI</title>
-    <link rel="stylesheet" href="/Css/index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-</head>
-<body>
+    <link rel="stylesheet" href="/Css/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <img src="/Resources/TraphacoLogo.png">
-            </div>
-            <div class="chat-list">
-                <div class="chat-item">
-                    <i class="fa-solid fa-comments" style="color: #000000;"></i>
-                    <span>-Trò chuyện</span>
-                </div>
-                <div class="chat-item">
-                    <i class="fa-solid fa-folder" style="color: #000000;"></i>
-                    <span>-Thêm dữ liệu</span>
-                </div>
-                <div class="chat-item">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                    <span>-Truy vấn dữ liệu trực tiếp</span>
-                </div>
-               
-            </div>
-            <div class="user-info">
-                <span> Xin chào: Giang Nguyễn</span>
-            </div>
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <img src="/Resources/TraphacoLogo.png" />
         </div>
-        <div class="main-chat">
-            <div class="chat-header">
-                <button id="toggleSidebar" class="toggle-sidebar-btn">☰</button>
-                <h2>Hướng dẫn vẩy rau</h2>
-                <div class="icons">
-                    <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i></a>
-                </div>
-            </div>
-            <div class="chat-body">
-                <div class="message user">
-                    <div class="message-content">
-                        Hướng dẫn tôi cách vẩy rau
-                    </div>
-                </div>
-                <div class="message ai">
-                    <i class="fa-solid fa-robot"></i>
-                    <div class="message-content">
-                        Rau bạn cần vẩy là rau gì? Có thể cho tôi biết thêm thông tin về loại rau bạn đang nói đến không?
-                    </div>
-                </div>
-            </div>
-            <div class="chat-footer">
-                <input type="text" placeholder="Bạn đang nghĩ gì?" class="chat-input">
-                <i class="fa-sharp fa-solid fa-paper-plane"></i>
-            </div>
-            <footer class="copyright-footer">
-                Mọi thắc mắc và vấn đề vui lòng liên hệ phòng IT - CTCP Traphaco
-            </footer>
+        <div class="chat-list">
+          <div class="chat-item">
+            <a href="index.html">
+              <i class="fa-solid fa-comments" style="color: #000000"></i>
+              <span>- Trò chuyện</span>
+            </a>
+          </div>
+          <div class="chat-item">
+            <a href="insert.html">
+              <i class="fa-solid fa-folder" style="color: #000000"></i>
+              <span>-Thêm dữ liệu</span>
+            </a>
+          </div>
+          <div class="chat-item">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
+            <span>-Truy vấn dữ liệu trực tiếp</span>
+          </div>
         </div>
+        <div class="user-info">
+          <span> Xin chào: Giang Nguyễn</span>
+        </div>
+      </div>
+      <div class="main-chat">
+        <div class="chat-header">
+          <button id="toggleSidebar" class="toggle-sidebar-btn">☰</button>
+          <h2>Trò chuyện với Chatbot</h2>
+          <div class="icons">
+            <a href="login.html"
+              ><i class="fa-solid fa-right-from-bracket"></i
+            ></a>
+          </div>
+        </div>
+        <div class="chat-body">
+          <div class="message user">
+            <div class="message-content">Hướng dẫn tôi cách vẩy rau</div>
+          </div>
+          <div class="message ai">
+            <i class="fa-solid fa-robot"></i>
+            <div class="message-content">
+              Rau bạn cần vẩy là rau gì? Có thể cho tôi biết thêm thông tin về
+              loại rau bạn đang nói đến không?
+            </div>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input
+            type="text"
+            placeholder="Bạn đang nghĩ gì?"
+            class="chat-input"
+          />
+          <i class="fa-sharp fa-solid fa-paper-plane"></i>
+        </div>
+        <footer class="copyright-footer">
+          Mọi thắc mắc và vấn đề vui lòng liên hệ phòng IT - CTCP Traphaco
+        </footer>
+      </div>
     </div>
 
     <script src="/Js/index.js"></script>
-</body>
+  </body>
 </html>
