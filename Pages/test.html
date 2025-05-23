@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xem .docx qua URL nội bộ</title>
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+</head>
+<body>
+  <h2>Xem Word từ URL nội bộ</h2>
+  <button onclick="loadDocx()">Tải file</button>
+  <div id="output" style="border: 1px solid #ccc; padding: 15px;"></div>
+
+  <script>
+    async function loadDocx() {
+      const url = 'http://localhost:5000/files/da774fb0-74a2-40ea-9a96-91860a40e251.docx';
+      try {
+        const response = await fetch(url);
+        const arrayBuffer = await response.arrayBuffer();
+        const result = await mammoth.convertToHtml({ arrayBuffer });
+        document.getElementById("output").innerHTML = result.value;
+      } catch (err) {
+        document.getElementById("output").innerText = "Lỗi khi tải file: " + err.message;
+      }
+    }
+  </script>
+</body>
+</html>
